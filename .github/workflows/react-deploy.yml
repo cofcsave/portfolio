@@ -28,6 +28,9 @@ jobs:
         run: |
           git config --global user.email "cofcsave@gmail.com"
           git config --global user.name "cofcsave"
+          cd dist
+          git init
           git add -A
           git commit -m 'Deploy to GitHub Pages'
           git push --force "https://${{ secrets.ACCESS_TOKEN }}@github.com/${{ github.repository }}.git" master:gh-pages
+          
