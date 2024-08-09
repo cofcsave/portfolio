@@ -1,0 +1,99 @@
+@import '../../variables';
+    
+
+section.designPort {
+    position: relative;
+    .box-container.white {
+        top: 119px;
+        right: 1%;
+    }
+    .designCont {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-column-gap: 24px;
+        grid-row-gap: 24px;
+        margin-bottom: 24px;
+        max-height: 75vw;
+
+        .div1, .div8 { grid-area: 1 / 1 / 5 / 5; }
+        .div2, .div9 { grid-area: 5 / 1 / 7 / 5; }
+        .div3, .div10 { grid-area: 1 / 5 / 3 / 9; }
+        .div4, .div11 { grid-area: 3 / 5 / 7 / 10; }
+        .div5, .div12 { grid-area: 1 / 9 / 3 / 13; }
+        .div6, .div13 { grid-area: 3 / 10 / 5 / 13; }
+        .div7, .div14 { grid-area: 5 / 10 / 7 / 13; }
+        @media screen and (max-width:767px) {
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            grid-column-gap: 12px;
+            grid-row-gap: 12px;
+            margin-bottom: 12px;
+            max-height: 145vw;
+            .div1, .div8, .div15 { grid-area: 1 / 1 / 5 / 4; }
+            .div2, .div9, .div16 { grid-area: 5 / 1 / 10 / 4; }
+            .div3, .div10, .div17 { grid-area: 10 / 1 / 13 / 5; }
+            .div4, .div11, .div18 { grid-area: 1 / 4 / 4 / 8; }
+            .div5, .div12, .div19 { grid-area: 4 / 4 / 7 / 8; }
+            .div6, .div13, .div20 { grid-area: 7 / 4 / 10 / 8; }
+            .div7, .div14, .div21 { grid-area: 10 / 5 / 13 / 8; }
+        }
+
+        .designProject {
+            position: relative;
+            overflow:hidden;
+            border-radius: $borderRSmall;
+            cursor: pointer;
+            @media screen and (max-width:767px) {
+                border-radius: $borderRMobile;
+                flex:0 1 calc(50% - 12px);
+             }
+             &.projLoadMore {
+                display: none;
+             }
+            span.card-hover {
+                position:absolute;
+                clip-path: circle(0% at 0% 0%);
+                width:0;
+                height:0;
+                background-color: rgba(193, 7, 227, 0.8);
+                transition: ease-in .5s;
+                font-size: 1.5rem;
+                line-height: 1.5rem;
+                padding: 12px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                p.type {
+                    font-weight: bold;
+                    font-size: .9rem;
+                    margin-bottom: 0;
+                    line-height: .9rem;
+                }
+             
+            }
+            &:hover {
+                span.card-hover {
+                    clip-path: circle(80% at 50% 50%);
+                    width:100%;
+                    height:100%;
+                    transition: ease-in .3s;
+                }
+            }
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: top;
+            }
+        }
+        
+    }
+    .bottomBtn {
+        text-align: center;
+        margin-top: 48px;
+        .loadMoreBtn {
+            text-align: center;
+        }
+    }
+}

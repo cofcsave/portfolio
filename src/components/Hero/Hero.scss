@@ -1,0 +1,30 @@
+@import '../../variables';
+
+section.hero {
+    padding-top: 271px;
+    text-align: center;
+    .box-container.lg { // animation component
+        right:0;
+        top:-60px;
+    }
+    .box-container.md { // animation component
+        right:50%;
+        bottom:-150px;
+    }
+    @media screen and (max-width:576px) {
+        gap: 28px;
+        padding-top:174px;
+        border-radius: 0;
+    }
+    svg {
+        margin:0 auto 24px;
+        display: block;
+        path {
+            fill:$primaryColor;
+        }
+    }
+    p {
+        margin-top: 24px;
+        font-size: 1.5rem;
+    }
+}

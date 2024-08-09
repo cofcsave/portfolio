@@ -1,0 +1,59 @@
+@import '../../variables';
+
+section.pastLogos {
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 24px;
+    position: relative;
+    .box-container.sm { // animation component
+        left:0;
+        bottom:-60px;
+    }
+    @media screen and (max-width:576px) {
+        padding:0;
+    }
+    .container {
+        max-width: 1440px;
+        margin:auto;
+        text-align: center;
+        background-color: $blockColor;
+        border-radius: $borderR;
+        padding: 44px 80px;
+        @media screen and (max-width:576px) {
+            border-radius: 0;
+            padding:40px 12px;
+        }
+        .logos {
+            display: flex;
+            gap: 72px;
+            align-items: end;
+            margin-top: 40px;
+            @media screen and (max-width:991px) {
+                gap: 5%;
+            }
+            @media screen and (max-width:768px) {
+                flex-wrap: wrap;
+                margin-top: 24px;
+            }
+            .logo {
+                display: block;
+                flex:1 1 100%;
+                @media screen and (max-width:768px) {
+                    flex:1 1 30%;
+                    margin-bottom: 24px;
+                }
+                svg {
+                    fill: $textColor;
+                    max-width: 145px;
+                    vertical-align: bottom;
+                    @media screen and (max-width:768px) {
+                        max-width: 105px;
+                    }
+                    &.descending {
+                        margin-bottom: -5px;
+                    }
+                }
+            }
+        }
+    }
+}

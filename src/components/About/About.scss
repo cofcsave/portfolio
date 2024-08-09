@@ -1,0 +1,39 @@
+@import "../../variables";
+
+.aboutMe {
+    overflow:hidden;
+    background-color: $blockColor;
+    margin-bottom:48px;
+    position: relative;
+    .box-container.blue {
+        top: 60px;
+        left: 0;
+        z-index: 2;
+    }
+    .box-container.purple {
+        bottom: -72px;
+        right:0;
+        z-index: 2;
+    }
+    .aboutContainer {
+        border-radius: $borderR;
+        padding: 48px 48px 0;
+        max-width: 1440px;
+        position:relative;
+        margin:48px auto 0;
+        @media screen and (max-width:767px) {
+            padding: 0;
+            margin:24px auto 0;
+         }
+        h2 {
+            color: $primaryColor;
+            text-align: left;
+            font-size: 36px;
+            margin-bottom:36px;
+        }
+        p {
+            color:$textColor;
+            text-align: left;
+        }
+    }
+}

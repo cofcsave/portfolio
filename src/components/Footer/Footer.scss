@@ -1,0 +1,33 @@
+@import '../../variables';
+
+footer {
+    text-align: center;
+    padding-bottom: 48px;
+    p {
+        color:#464646;
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+        margin:0 auto;
+        font-weight: 500;
+    }
+    .ckLogo {
+        width: 75px;
+    }
+    .moto {
+        font-weight: bold;
+        margin-bottom: 36px;
+    }
+    svg {
+        margin-bottom: 36px;
+        path, g, rect {
+            fill:#464646;
+        }
+    }
+    .footDivide {
+        height: 2px;
+        width:80%;
+        max-width: 200px;
+        background-color: #464646;
+        margin:24px auto;
+    }
+}

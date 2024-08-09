@@ -1,0 +1,104 @@
+@import '../../variables';
+
+section.skillset {
+    text-align: center;
+    max-width: 1440px;
+    margin:auto;
+    position: relative;
+    .box-container.blue {
+        bottom:-83;
+        left: 10%;
+    }
+    .box-container.purple {
+       top:100px;
+        right: 20%;
+        transform: rotate(180deg);
+    }
+    .skillChartMobile {
+        flex-wrap: wrap;
+        row-gap: 8px;
+        max-width: 850px;
+        padding:24px 32px 0;
+        @media screen and (max-width:567px) {
+            padding:24px 0 0;
+        }
+        .skillLabel {
+            width: 100%;
+            p {
+                text-align: left;
+            }
+            .skillbarContainer {
+                .skillbar {
+                    height: 8px;
+                    margin-top: 4px;
+                    transition: width 1s ease-in-out;
+                }
+            }
+        }
+    }
+    .skillChart {
+        row-gap: 12px;
+        height: 248px;
+        max-width: 850px;
+        padding-left: 18px;
+        border-bottom: 2px solid #fff;
+        padding: 24px 0;
+        .skillLabel {
+            height: 100%;
+            p {
+                transform: rotate(-90deg);
+                transform-origin: bottom left;
+                bottom: 0;
+                width: 200px;
+                left: -15px;
+                position: absolute;
+                line-height: 0;
+            }
+            .skillbarContainer {
+                .skillbar {
+                    height: 100%;
+                    margin-top: 4px;
+                    width: 12px;
+                    transition: height 1s ease-in-out;
+                }
+            }
+        }
+    }
+    .skillChart, .skillChartMobile {
+        display:flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        
+        .skillLabel {
+            position: relative;
+            p {
+                text-align: left;
+            }
+            .skillbarContainer {
+                height: 100%;
+                display: flex;
+                align-items: flex-end;
+                .skillbar {
+                    background-color:$primaryColor;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+    .comingSoon {
+        padding-top: 48px;
+        max-width: 1440px;
+        margin: auto;
+        h3 {
+            max-width: 700px;
+            margin: auto;
+        }
+    }
+}
+
+
+
+   

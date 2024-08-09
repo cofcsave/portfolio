@@ -1,0 +1,173 @@
+@import '../../../variables';
+
+.box-container {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin:15px;
+    opacity:.1;
+    width: 230px;
+    position:absolute;
+    z-index: -1;
+  }
+
+  .md .mdNoShow {
+    opacity:0;
+  }
+  .sm .smNoShow {
+    opacity:0;
+  }
+  
+  .purple .box {
+    background-color:$primaryColor;
+    &.medium-color {
+      animation-name: blink-medium-primary;
+    }
+    &.dark-color {
+      animation-name: blink-dark-primary;
+    }
+  }
+  .blue .box {
+    background-color:$secondaryColor;
+    &.medium-color {
+      animation-name: blink-medium-secondary;
+    }
+    &.dark-color {
+      animation-name: blink-dark-secondary;
+    }
+  }
+  .white .box {
+    background-color:$white;
+    &.medium-color {
+      animation-name: blink-medium-tertiary;
+    }
+    &.dark-color {
+      animation-name: blink-dark-tertiary;
+    }
+  }
+  .box {
+    width: 20px;
+    height: 20px;
+    margin:5px;
+    border-radius: 5px;
+  }
+  
+  // .box.medium-blue {
+  //   animation-name: blink-medium;
+  // }
+  // .box.dark-blue {
+  //   animation-name: blink-dark;
+  // }
+  .box {
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  .box.op0 {
+    opacity:0;
+  }
+  .box.d1 {
+    animation-delay: 1s;
+  }
+  .box.d2 {
+    animation-delay: 1.5s;
+  }
+  .box.d3 {
+    animation-delay: 2s;
+  }
+  .box.d4 {
+    animation-delay: 2.5s;
+  }
+  .box.d5 {
+    animation-delay: 3s;
+  }
+  @keyframes blink-dark-primary {
+    40% {
+      background-color:$primary50;/*medium*/
+    }
+    60% {
+      background-color:$primaryColor;/*dark*/
+    }
+    80% {
+      background-color:$primary50;/*medium*/
+    }
+    100% {
+      background-color:$primary25;/*light*/
+    }
+  }
+  
+  @keyframes blink-medium-primary {
+    40% {
+      background-color:$primary50;/*medium*/
+    }
+    60% {
+      background-color:$primary50;/*medium*/
+    }
+    80% {
+      background-color:$primary50;/*medium*/
+    }
+    100% {
+      background-color:$primary25;/*light*/
+    }
+  }
+  @keyframes blink-dark-secondary {
+    40% {
+      background-color:$secondary50;/*medium*/
+    }
+    60% {
+      background-color:$secondary75;/*dark*/
+    }
+    80% {
+      background-color:$secondary50;/*medium*/
+    }
+    100% {
+      background-color:$secondary25;/*light*/
+    }
+  }
+  
+  @keyframes blink-medium-secondary {
+    40% {
+      background-color:$secondary50;/*medium*/
+    }
+    60% {
+      background-color:$secondary50;/*medium*/
+    }
+    80% {
+      background-color:$secondary50;/*medium*/
+    }
+    100% {
+      background-color:$secondary25;/*light*/
+    }
+  }
+  @keyframes blink-dark-tertiary {
+    40% {
+      background-color:$tertiary50;/*medium*/
+    }
+    60% {
+      background-color:$tertiary75;/*dark*/
+    }
+    80% {
+      background-color:$tertiary50;/*medium*/
+    }
+    100% {
+      background-color:$tertiary25;/*light*/
+    }
+  }
+  
+  @keyframes blink-medium-tertiary {
+    40% {
+      background-color:$tertiary50;/*medium*/
+    }
+    60% {
+      background-color:$tertiary50;/*medium*/
+    }
+    80% {
+      background-color:$tertiary50;/*medium*/
+    }
+    100% {
+      background-color:$tertiary25;/*light*/
+    }
+  }

@@ -1,0 +1,150 @@
+@import '../../variables';
+// @import "slick-carousel/slick/slick.css";
+// @import "slick-carousel/slick/slick-theme.css";
+
+section.webPortfolio {
+    background-color: $blockColor;
+    overflow: hidden;
+    position: relative;
+    .box-container.blue {
+        bottom:100px;
+        left: 48px;
+        z-index: 2;
+    }
+    .webPortTabsContainer {
+        @media screen and (max-width:991px) {
+           display: none;
+        }
+    }
+    .wpTabs {
+        border-bottom: 2px solid $textColor;
+        max-width: 1440px;
+        max-width: 1440px;
+        margin:94px auto 0;
+        .tabsContainer {
+            position: relative;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            width: 88%;
+            margin: auto;
+            padding-bottom: 24px;
+            .tab {
+                cursor: pointer;
+                min-width: 75px;
+                text-align: center;
+                p {
+                line-height: 1.125rem;
+                }
+            }
+            .tab.active {
+                p {
+                    color: $primaryColor;
+                    opacity:.5;
+                    font-weight: 800;
+                }
+            }
+            .arrowIndicator {
+                position: absolute;
+                bottom:-26px;
+                left:0;
+                transition: left .5s;
+                width: 75px;
+                text-align: center;
+                svg {
+                    .arrowBack {
+                        fill:$blockColor
+                    }
+                    .arrowStroke {
+                        stroke:$textColor;
+                    }
+                }
+            }
+        }
+    }
+    .webContentContainer {
+        position: relative;
+        .arrowsMobile {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            width: 100%;
+            z-index: 99;
+            cursor: pointer;
+            .leftArrow, .rightArrow {
+                cursor: pointer;
+                width:18px;
+            }
+        }
+    }
+    .webPortMobile {
+        width:100%;
+        padding:0;
+        margin:0 0 24px;
+        flex: 1 0 100%;
+        h2 {
+            color: $primaryColor;
+            text-align: center;
+            font-size: 2.5rem;
+            line-height: 3rem;
+            margin: 0 24px 48px;
+            padding:0 20px;
+        }
+        .description, .btn, .usedTech, .newSite {
+            text-align: left;
+        }
+        .usedTech {
+            margin-top: 48px;
+        }
+        .description, .newSite {
+            margin: 24px 0;
+        }
+    }
+    .webPotDesc {
+        position:absolute;
+        opacity:0;
+        transform:translateX(60px);
+        max-width: 1280px;
+        margin: auto;
+        padding: 80px 20px;
+        gap: 48px;
+       
+        h2 {
+            color: $primaryColor;
+        }
+        .leftContent {
+            flex-basis: 35%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 24px;
+            align-items:start;
+            
+            h2, p {
+                text-align: left;
+                margin:0;
+            }
+           
+        }
+        .rightContent {
+            flex-basis: 65%;
+           
+            h2 {
+                display: none;
+            }
+            img {
+                filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, .4));
+            }
+        }
+        &.active {
+            position:unset;
+            display: flex;
+            opacity: 1;
+            transform:translateX(0px);
+            transition:all 2s ease-in-out;
+        }
+    }
+    .webPort {
+        position:relative;
+       
+    }
+}

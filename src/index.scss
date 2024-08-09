@@ -1,0 +1,126 @@
+@import 'variables';
+
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+/* end basic reset styles*/
+
+body {
+    background-color: $baseColor;
+    font-family: 'Nunito', Helvetica, sans-serif;
+    color:$textColor;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    line-height: normal;
+    letter-spacing: 1.2px;
+    font-weight: 400;
+    span {
+        color:$primaryColor;
+    }
+    @media screen and (max-width:767px) {
+        font-size:2.7rem;
+    }
+    @media screen and (max-width:476px) {
+        font-size:2.2rem;
+    }
+}
+h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 18px auto 12px;
+    @media screen and (max-width:767px) {
+        font-size:2.25rem;
+        line-height: 2.25rem;
+    }
+    @media screen and (max-width:476px) {
+        font-size:2.2rem;
+        font-size:2.2rem;
+    }
+}
+
+h2~p {
+    text-align: center;
+}
+h3 {
+    font-size: 2.25rem;
+    letter-spacing: 0.72px;
+    text-align: center;
+    color:$textColor;
+    @media screen and (max-width:767px) {
+        font-size:1.38rem;
+    }
+}
+h3~p {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 1.25rem;
+    @media screen and (max-width:767px) {
+        font-size:1.125rem;
+    }
+
+}
+p {
+    font-size: 1.125rem;
+    font-weight: 200;
+    line-height: 2rem;
+    @media screen and (max-width:767px) {
+        font-size:1rem;
+        line-height: 1.7rem;
+    }
+}
+a {
+    text-decoration: none;
+}
+div.divider {
+    width: 75px;
+    height: 7px;
+    border-radius: 10px;
+    background-color:$secondaryColor;
+    margin: 0 auto 0;
+}
+section {
+    padding:124px 48px;
+    @media screen and (max-width:768px) {
+        padding:48px 24px;
+    }
+}
+a.btn {
+    border-radius: 8px;
+    border: 2px solid $primaryColor;
+    padding: 10px 30px;
+    color:$primaryColor;
+    display: inline-block;
+    cursor: pointer;
+}
+.headerWDivide {
+    margin-bottom: 95px;
+    @media screen and (max-width:768px) {
+        margin-bottom: 48px;
+    }
+}
