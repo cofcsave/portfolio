@@ -34,7 +34,7 @@ export default function DesignPort () {
     }, [modals]);
 
       return (
-        <section className="designPort">
+        <section className="designPort" id='designPortfolio'>
             <div className="headerWDivide">
                 <div className="divider"></div>
                 <h2>My Design/Email portfolio</h2>

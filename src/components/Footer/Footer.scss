@@ -2,10 +2,10 @@
 
 footer {
     text-align: center;
-    padding-bottom: 48px;
+    padding: 0 24px 48px;
     p {
         color:#464646;
-        font-size: 1.5rem;
+        font-size: 1rem;
         line-height: 1.7rem;
         margin:0 auto;
         font-weight: 500;
@@ -15,7 +15,8 @@ footer {
     }
     .moto {
         font-weight: bold;
-        margin-bottom: 36px;
+        font-size: 1.25rem;
+        margin-bottom: 24px;
     }
     svg {
         margin-bottom: 36px;

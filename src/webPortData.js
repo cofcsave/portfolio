@@ -32,7 +32,7 @@ export const WEBPORT = [
     {
         company: 'Cavista',
         skillsUsed: 'HTML, SCSS, Javascript, AdobeXD, Git, Bitbucket',
-        copy: 'This was another website overhaul. their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the design didn\'t require too many edits and the website was fairly simple.',
+        copy: 'This was another website overhaul. their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the website was fairly simple.',
         img: Cavista,
         link: 'https://cassykdesign.com/websites/cavistatech/index.html',
         updated: true,
@@ -42,26 +42,27 @@ export const WEBPORT = [
     {
         company: 'Nextiva',
         skillsUsed: 'HTML, SCSS, PHP, JavaScript, Figma, GSAP and tiny bit of WordPress',
-        copy: 'I learned a lot from working on this website. It\'s mainly php modules and vanilla javascript, html and css. Their were also the previous Lottie animations that I needed to optimize for low web performance scores. I was able to recreate the animations by using GSAP to greatly improve our scores (see link for one such animation).',
+        copy: 'I learned a lot from working on this website. It\'s mainly php modules and vanilla javascript, html and css. I was also able to recreate the large Lottie animations using GSAP to greatly improve our scores (see link for one such animation).',
         img: Nextiva,
         link: 'https://web.archive.org/web/20231203114356/https://www.nextiva.com/products/productivity.html',
         updated: true,
-        updateCopy: 'They have since ported fully to Wordpress and redesigned the entire site but above is the link to what I originally created via Wayback Machine',
+        updateCopy: 'They have since transferred fully to Wordpress and redesigned the entire site but above is the link to what I originally created via Wayback Machine',
         identity: 'n-content'
     },
     {
         company: 'Density',
-        skillsUsed: 'This was a smaller newer company that needed help with a WebFlow site. I had not previously used WebFlow as I prefer coding websites. Though, I have to admit the problems solving opportunities this presented was fun to work through. I was able to really dive in and understand WebFlow\'s limitations and tricks and how to work around them.',
+        skillsUsed: 'Webflow, Figma, HTML, CSS',
+        copy: 'This was a smaller newer company that needed help with a WebFlow site. I had not previously used WebFlow as I prefer coding websites. Though, I have to admit the problems solving opportunities this presented was fun to work through. I was able to really dive in and understand WebFlow\'s limitations and tricks and how to work around them.',
         img: Density,
-        link: 'https://atlantisscuba.com/',
+        link: 'https://www.density.io/',
         updated: false,
-        updateCopy: 'stuff',
+        updateCopy: '',
         identity: 'd-content'
     },
     {
         company: 'Quote<br/>Friendly',
         skillsUsed: 'HTML, SCSS, JavaScript, AdobeXD',
-        copy: 'This website was originally for an insurance company based out of Florida. The goal of this website was to get information for potential customers and an online presence that they could use for advertisements. The client wanted to gather information quickly and easily so the agents had a starting point and the user did not get bored and leave.',
+        copy: 'This website was originally for an insurance company based out of Florida. The goal of this website was to get information quickly and easily from potential customers and an online presence that they could use for advertisements. ',
         img: Insurance,
         link: 'https://cassykdesign.com/websites/quotefriendly/index',
         updated: true,
