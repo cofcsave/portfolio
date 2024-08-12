@@ -33,19 +33,7 @@ export default function DesignPort () {
         }
     }, [modals]);
 
-    useEffect(() => {
-        const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
-
-        if (isTouchDevice) {
-            const modalButtons = document.querySelectorAll('.modal-button');
-            modalButtons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    openModal(button.getAttribute('data-modal'));
-                });
-            });
-        }
-    }, []);
+   
 
       return (
         <section className="designPort" id='designPortfolio'>
@@ -56,7 +44,12 @@ export default function DesignPort () {
             </div>
             <div className="designCont">
                 {DESIGNPORT.slice(0, 7).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}>
+                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
+                        onTouchStart={(e) => {
+                            e.preventDefault(); // Prevent any unintended side effects.
+                            openModal(design.modal);
+                        }}
+                        >
                         <p className='type'>{design.projectType}</p>
                         <p className='projectName'>{design.project}</p>
                     </span>
@@ -66,7 +59,11 @@ export default function DesignPort () {
             </div>
             {loadMore && <div> <div className="designCont">
                 {DESIGNPORT.slice(7,14).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}>
+                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
+                        onTouchStart={(e) => {
+                            e.preventDefault(); // Prevent any unintended side effects.
+                            openModal(design.modal);
+                        }}>
                         <p className='type'>{design.projectType}</p>
                         <p className='projectName'>{design.project}</p>
                     </span>
@@ -83,7 +80,11 @@ export default function DesignPort () {
             }
             {loadMore2 && <div className="designCont">
                 {DESIGNPORT.slice(14,22).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}>
+                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
+                        onTouchStart={(e) => {
+                            e.preventDefault(); // Prevent any unintended side effects.
+                            openModal(design.modal);
+                        }}>
                         <p className='type'>{design.projectType}</p>
                         <p className='projectName'>{design.project}</p>
                     </span>
