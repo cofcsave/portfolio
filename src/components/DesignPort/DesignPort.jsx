@@ -9,6 +9,8 @@ export default function DesignPort () {
     const [loadMore2, setLoadMore2] = useState(false)
     const [modals, setModals] = useState({});
     const [isTouchDevice, setIsTouchDevice] = useState(false);
+    const [touchStartY, setTouchStartY] = useState(0);
+    const [touchEndY, setTouchEndY] = useState(0);
 
     useEffect(() => {
         // Check if the device is a touch device
@@ -16,9 +18,18 @@ export default function DesignPort () {
         setIsTouchDevice(isTouch);
     }, []);
 
-    const handleTouch = (e, modal) => {
-        openModal(modal);
-        e.preventDefault();
+    const handleTouchStart = (e) => {
+        setTouchStartY(e.touches[0].clientY);
+    };
+
+    const handleTouchMove = (e) => {
+        setTouchEndY(e.touches[0].clientY);
+    };
+
+    const handleTouchEnd = (modal) => {
+        if (Math.abs(touchStartY - touchEndY) < 10) {
+            openModal(modal);
+        }
     };
     
       const openModal = (modalName) => {
@@ -64,7 +75,9 @@ export default function DesignPort () {
                         </span>
                     )}
                     <img src={design.img} alt="" onClick={isTouchDevice ? () => openModal(design.modal) : null}
-                        onTouchStart={isTouchDevice ? (e) => handleTouch(e, design.modal) : null}/>
+                        onTouchStart={isTouchDevice ? handleTouchStart : null}
+                        onTouchMove={isTouchDevice ? handleTouchMove : null}
+                        onTouchEnd={isTouchDevice ? () => handleTouchEnd(design.modal) : null}/>
                 </div>
                 )}
             </div>
