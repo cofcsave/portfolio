@@ -25,12 +25,14 @@ section.pastLogos {
         }
         .logos {
             display: flex;
-            gap: 72px;
+            column-gap: 72px;
+            row-gap: 24px;
             align-items: end;
             margin-top: 40px;
             justify-content: center;
             @media screen and (max-width:991px) {
-                gap: 8%;
+                column-gap: 8%;
+
             }
             @media screen and (max-width:768px) {
                 flex-wrap: wrap;

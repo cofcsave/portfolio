@@ -136,7 +136,7 @@ const WebPort = () => {
                     </h2>
                     <p className="usedTech">{site.skillsUsed}</p>
                     <p className="description">{site.copy}</p>
-                    <a href="" className="btn">
+                    <a href={site.link} target="_blank" className="btn">
                       Visit Site{' '}
                       <svg
                         width="10"
@@ -216,7 +216,7 @@ const WebPort = () => {
                   />
                   <p className="usedTech">{site.skillsUsed}</p>
                   <p className="description">{site.copy}</p>
-                  <a href={site.link} className="btn">
+                  <a href={site.link} target="_blank" className="btn">
                     Visit Site{' '}
                     <svg
                       width="10"

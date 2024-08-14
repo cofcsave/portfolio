@@ -8,6 +8,18 @@ export default function DesignPort () {
     const [loadMore, setLoadMore] = useState(false)
     const [loadMore2, setLoadMore2] = useState(false)
     const [modals, setModals] = useState({});
+    const [isTouchDevice, setIsTouchDevice] = useState(false);
+
+    useEffect(() => {
+        // Check if the device is a touch device
+        const isTouch = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+        setIsTouchDevice(isTouch);
+    }, []);
+
+    const handleTouch = (e, modal) => {
+        openModal(modal);
+        e.preventDefault();
+    };
     
       const openModal = (modalName) => {
         setModals({ ...modals, [modalName]: true });
@@ -32,9 +44,7 @@ export default function DesignPort () {
             document.body.classList.remove('no-scroll');
         }
     }, [modals]);
-
-   
-
+    
       return (
         <section className="designPort" id='designPortfolio'>
             <div className="headerWDivide">
@@ -44,26 +54,23 @@ export default function DesignPort () {
             </div>
             <div className="designCont">
                 {DESIGNPORT.slice(0, 7).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
-                        onTouchStart={(e) => {
-                            e.preventDefault(); // Prevent any unintended side effects.
-                            openModal(design.modal);
-                        }}
+                    {!isTouchDevice && (
+                        <span
+                            className="card-hover modal-button"
+                            onClick={() => openModal(design.modal)}
                         >
-                        <p className='type'>{design.projectType}</p>
-                        <p className='projectName'>{design.project}</p>
-                    </span>
-                    <img src={design.img} alt=""/>
+                            <p className='type'>{design.projectType}</p>
+                            <p className='projectName'>{design.project}</p>
+                        </span>
+                    )}
+                    <img src={design.img} alt="" onClick={isTouchDevice ? () => openModal(design.modal) : null}
+                        onTouchStart={isTouchDevice ? (e) => handleTouch(e, design.modal) : null}/>
                 </div>
                 )}
             </div>
             {loadMore && <div> <div className="designCont">
                 {DESIGNPORT.slice(7,14).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
-                        onTouchStart={(e) => {
-                            e.preventDefault(); // Prevent any unintended side effects.
-                            openModal(design.modal);
-                        }}>
+                <span className={`card-hover modal-button ${isTouchDevice ? 'no-hover' : ''}`} onClick={() => !isTouchDevice && openModal(design.modal)} onTouchStart={(e) => handleTouch(e, design.modal)}>
                         <p className='type'>{design.projectType}</p>
                         <p className='projectName'>{design.project}</p>
                     </span>
@@ -80,11 +87,7 @@ export default function DesignPort () {
             }
             {loadMore2 && <div className="designCont">
                 {DESIGNPORT.slice(14,22).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                    <span className="card-hover modal-button" onClick={() => openModal(design.modal)} data-modal={design.modal}
-                        onTouchStart={(e) => {
-                            e.preventDefault(); // Prevent any unintended side effects.
-                            openModal(design.modal);
-                        }}>
+                <span className={`card-hover modal-button ${isTouchDevice ? 'no-hover' : ''}`} onClick={() => !isTouchDevice && openModal(design.modal)} onTouchStart={(e) => handleTouch(e, design.modal)}>
                         <p className='type'>{design.projectType}</p>
                         <p className='projectName'>{design.project}</p>
                     </span>
