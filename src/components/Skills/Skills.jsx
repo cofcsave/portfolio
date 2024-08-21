@@ -62,7 +62,7 @@ export default function Skills () {
             <div className="headerWDivide">
                 <div className="divider"></div>
                 <h2>My skill set</h2>
-                <p>My current skills and there level's with many more to come and my levels to&nbsp;grow.</p>
+                <p>My current skills and there level's with many more to come while I also work to improve what I know.</p>
             </div>
         {!isMobile &&
             <div className="skillChart">

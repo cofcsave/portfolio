@@ -32,7 +32,7 @@ export const WEBPORT = [
     {
         company: 'Cavista',
         skillsUsed: 'HTML, SCSS, Javascript, AdobeXD, Git, Bitbucket',
-        copy: 'This was another website overhaul. their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the website was fairly simple.',
+        copy: 'This was another website overhaul. Their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the website was fairly simple.',
         img: Cavista,
         link: 'https://cassykdesign.com/websites/cavistatech/index.html',
         updated: true,
@@ -42,7 +42,7 @@ export const WEBPORT = [
     {
         company: 'Nextiva',
         skillsUsed: 'HTML, SCSS, PHP, JavaScript, Figma, GSAP and tiny bit of WordPress',
-        copy: 'I learned a lot from working on this website. It\'s mainly php modules and vanilla javascript, html and css. I was also able to recreate the large Lottie animations using GSAP to greatly improve our scores (see link for one such animation).',
+        copy: 'I learned a lot from working on this website like accessibility some PHP templating. I was also able to recreate the large Lottie animations using GSAP to greatly improve performance scores (see link for one such animation).',
         img: Nextiva,
         link: 'https://web.archive.org/web/20231203114356/https://www.nextiva.com/products/productivity.html',
         updated: true,
@@ -52,7 +52,7 @@ export const WEBPORT = [
     {
         company: 'Density',
         skillsUsed: 'Webflow, Figma, HTML, CSS',
-        copy: 'This was a smaller newer company that needed help with a WebFlow site. I had not previously used WebFlow as I prefer coding websites. Though, I have to admit the problems solving opportunities this presented was fun to work through. I was able to really dive in and understand WebFlow\'s limitations and tricks and how to work around them.',
+        copy: 'This was a smaller newer company that needed help with a WebFlow site. I had not previously used WebFlow as I prefer vanilla coding. Though, I have to admit the problems solving opportunities this presented was fun to work through. I was able to really dive in and understand WebFlow\'s limitations and tricks and how to work around them.',
         img: Density,
         link: 'https://www.density.io/',
         updated: false,
