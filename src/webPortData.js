@@ -34,7 +34,7 @@ export const WEBPORT = [
         skillsUsed: 'HTML, SCSS, Javascript, AdobeXD, Git, Bitbucket',
         copy: 'This was another website overhaul. Their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the website was fairly simple.',
         img: Cavista,
-        link: 'https://cassykdesign.com/websites/cavistatech/index.html',
+        link: 'https://cofcsave.github.io/cavista/',
         updated: true,
         updateCopy: 'They have since updated the website and changed their name to Cavista Holdings. Here is a link to what I originally created.',
         identity: 'c-content'
@@ -64,7 +64,7 @@ export const WEBPORT = [
         skillsUsed: 'HTML, SCSS, JavaScript, AdobeXD',
         copy: 'This website was originally for an insurance company based out of Florida. The goal of this website was to get information quickly and easily from potential customers and an online presence that they could use for advertisements. ',
         img: Insurance,
-        link: 'https://cassykdesign.com/websites/quotefriendly/index',
+        link: 'https://cofcsave.github.io/quoteFriendly/',
         updated: true,
         updateCopy: 'They have since sold their branch and the buyer had their own site so this one was taken down. The above link is the fully built site before it was taken down.',
         identity: 'qf-content'
