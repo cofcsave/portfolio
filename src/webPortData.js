@@ -24,7 +24,7 @@ export const WEBPORT = [
         skillsUsed: 'HTML, SCSS, JavaScript, Git',
         copy: 'This website was a complete overhaul for a startup I worked for called Cybernetic Entertainment. I was going for a more visual eye catching experience to go along with what the product offers, visual eye candy for your music.',
         img: Cybernetic,
-        link: 'https://cassykdesign.com/websites/cybernetic/index',
+        link: 'https://cofcsave.github.io/cybernetic/',
         updated: true,
         updateCopy: 'They are no longer around unfortunately but this is what I originally created.',
         identity: 'lm-content'
