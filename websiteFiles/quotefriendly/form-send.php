@@ -21,7 +21,7 @@ $email_subject = "Inquiry";
 $email_body = "You have received a new message from the user $name.\n".
     "Here is the message:\nName : $name \nE-mail ".
     
-$to = "ckinderknecht@yahoo.com";//<== update the email address
+$to = "";//<== update the email address
 $headers = "From: $email_from \r\n";
 $headers .= "Reply-To: $visitor_email \r\n";
 //Send the email!
