@@ -29,6 +29,7 @@ jobs:
           git config --global user.email "cofcsave@gmail.com"
           git config --global user.name "cofcsave"
           cd dist
+          echo 'cassykdesign.com' > CNAME
           git init
           git add -A
           git commit -m 'Deploy to GitHub Pages'
