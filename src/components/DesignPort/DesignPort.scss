@@ -3,6 +3,9 @@
 
 section.designPort {
     position: relative;
+    &.topLayer {
+        z-index: 9999;
+    }
     .box-container.white {
         top: 119px;
         right: 1%;

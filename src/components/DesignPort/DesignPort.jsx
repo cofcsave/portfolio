@@ -5,8 +5,9 @@ import { DESIGNPORT } from '../../designPortData';
 import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function DesignPort () {
-    const [loadMore, setLoadMore] = useState(false)
-    const [loadMore2, setLoadMore2] = useState(false)
+    const [loadMore, setLoadMore] = useState(false);
+    const [loadMore2, setLoadMore2] = useState(false);
+    const [onTop, moveToTop] = useState(false);
     const [modals, setModals] = useState({});
     const [isTouchDevice, setIsTouchDevice] = useState(false);
     const [touchStartY, setTouchStartY] = useState(0);
@@ -34,10 +35,12 @@ export default function DesignPort () {
     
       const openModal = (modalName) => {
         setModals({ ...modals, [modalName]: true });
+        moveToTop(true)
       };
     
       const closeModal = (modalName) => {
         setModals({ ...modals, [modalName]: false });
+        moveToTop(false)
       };
     
       const closeAllModals = () => {
@@ -57,7 +60,7 @@ export default function DesignPort () {
     }, [modals]);
     
       return (
-        <section className="designPort" id='designPortfolio'>
+        <section className={`designPort ${onTop ? 'topLayer' : ''}`} id='designPortfolio'>
             <div className="headerWDivide">
                 <div className="divider"></div>
                 <h2>My Design/Email portfolio</h2>
