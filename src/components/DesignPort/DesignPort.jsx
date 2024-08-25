@@ -86,11 +86,19 @@ export default function DesignPort () {
             </div>
             {loadMore && <div> <div className="designCont">
                 {DESIGNPORT.slice(7,14).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                <span className={`card-hover modal-button ${isTouchDevice ? 'no-hover' : ''}`} onClick={() => !isTouchDevice && openModal(design.modal)} onTouchStart={(e) => handleTouch(e, design.modal)}>
-                        <p className='type'>{design.projectType}</p>
-                        <p className='projectName'>{design.project}</p>
-                    </span>
-                    <img src={design.img} alt=""/>
+                {!isTouchDevice && (
+                        <span
+                            className="card-hover modal-button"
+                            onClick={() => openModal(design.modal)}
+                        >
+                            <p className='type'>{design.projectType}</p>
+                            <p className='projectName'>{design.project}</p>
+                        </span>
+                    )}
+                    <img src={design.img} alt="" onClick={isTouchDevice ? () => openModal(design.modal) : null}
+                        onTouchStart={isTouchDevice ? handleTouchStart : null}
+                        onTouchMove={isTouchDevice ? handleTouchMove : null}
+                        onTouchEnd={isTouchDevice ? () => handleTouchEnd(design.modal) : null}/>
                 </div>
                 )}
                
@@ -103,11 +111,19 @@ export default function DesignPort () {
             }
             {loadMore2 && <div className="designCont">
                 {DESIGNPORT.slice(14,22).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
-                <span className={`card-hover modal-button ${isTouchDevice ? 'no-hover' : ''}`} onClick={() => !isTouchDevice && openModal(design.modal)} onTouchStart={(e) => handleTouch(e, design.modal)}>
-                        <p className='type'>{design.projectType}</p>
-                        <p className='projectName'>{design.project}</p>
-                    </span>
-                    <img src={design.img} alt=""/>
+                {!isTouchDevice && (
+                        <span
+                            className="card-hover modal-button"
+                            onClick={() => openModal(design.modal)}
+                        >
+                            <p className='type'>{design.projectType}</p>
+                            <p className='projectName'>{design.project}</p>
+                        </span>
+                    )}
+                    <img src={design.img} alt="" onClick={isTouchDevice ? () => openModal(design.modal) : null}
+                        onTouchStart={isTouchDevice ? handleTouchStart : null}
+                        onTouchMove={isTouchDevice ? handleTouchMove : null}
+                        onTouchEnd={isTouchDevice ? () => handleTouchEnd(design.modal) : null}/>
                 </div>
                 )}
                 {!loadMore2 && <div className="bottomBtn" onClick={() => setLoadMore2(true)}>
