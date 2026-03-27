@@ -9,13 +9,9 @@ export default function About () {
                 <h2>A little about me</h2>
             </div>
             <div className="aboutContainer">
-                <p>Hi, I'm Cassy, a Front End Web Developer and UI/UX Designer based in Dallas, TX with over 9 years of coding under my belt and absolutely no plans to stop learning.
-The thing that hooked me on development? The problem solving. There's genuinely nothing like that moment when everything clicks. I started my career in print design, we're talking NASCAR wraps, sales flyers, the works, then chased a new challenge into email design and coding (shoutout to Outlook for truly humbling me), and eventually found my home in front end web development. Along the way I've been a bit of a renaissance woman: designing, coding, updating, and occasionally still saving the day with a last-minute print piece.
-<br/>
-These days I'm expanding my toolkit by learning React and React Native, adding component-based development to a front end foundation I've been building for years.
-<br/>
-I'm also staying current with AI and how it's shaping the way we build for the web. I think it's a genuinely powerful tool, especially in the hands of someone who already understands the craft. Pair it with solid technical knowledge and it seriously levels up what you can build and how fast you can build it. I'm all about using every good tool available, and right now AI is absolutely one of them.
-</p>
+                <p>Hi, I'm Cassy and I'm a Front End Web Developer with UI/UX experience based in Dallas, TX. I've been coding for over 8 years now and the more I learn the more I want to know. The challenge that it presents and the problem solving it requires, there's nothing like it.<br/><br/>
+
+                    I started my career as a print designer working on everything from Nascar Wraps to sales flyers and everything in-between. I started looking for a different kind of challenge and worked my way into email design/coding which, with Outlook, was definitely a challenge. I then worked my way into front end web development where I've been working for the last 8-9 years. In many of my positions I was a renaissance woman responsible for design and coding of website pages, emails, website updates and the occasional print piece.</p>
             </div>
             <BoxAnimation color='blue' size='lg' />
             <BoxAnimation color='purple' size='md' />
