@@ -8,19 +8,15 @@ export const SKILLS = [
         level: 100
     },
     {
+        skillName: 'Wordpress',
+        level: 80
+    },
+    {
         skillName: 'JavaScript',
         level: 60
     },
     {
-        skillName: 'Angular',
-        level: 30
-    },
-    {
         skillName: 'React',
-        level: 30
-    },
-    {
-        skillName: 'GASP (GreenSock)',
         level: 40
     },
     {
@@ -32,16 +28,8 @@ export const SKILLS = [
         level: 80
     },
     {
-        skillName: 'Webflow',
-        level: 90
-    },
-    {
-        skillName: 'Adobe XD',
-        level: 60
-    },
-    {
         skillName: 'Figma',
-        level: 70
+        level: 80
     },
     {
         skillName: 'Photoshop',
