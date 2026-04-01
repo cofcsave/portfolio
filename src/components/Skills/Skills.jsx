@@ -2,7 +2,7 @@ import './Skills.scss';
 import { SKILLS } from '../../data';
 import { useState, useEffect, useRef } from 'react';
 import { useScreenSize } from '../../hooks/useScreenSize';
-import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function Skills () {
     const [animatedElements, setAnimatedElements] = useState(new Set());
@@ -99,11 +99,11 @@ export default function Skills () {
      </div>
         }
         <div className="comingSoon">
-            <h3>What's Next?</h3>
-            <p>I want to know how to build everything. Here's what next in my ever-evolving "To&nbsp;Learn" or "Get Better At" list.<br/>JQuery, PHP, React, Angular, Vue, Wordpress</p>
+            <h3>What skills am I working on adding to my list?</h3>
+            <p>React and React Native are my main focus right now. Building real things until it actually sticks. AI-assisted dev tools like Cursor and Claude Code have become a genuine assist in my daily life, and I'm keeping an eye on how LLMs and conversational search are changing the web.</p>
         </div>
-        <BoxAnimation color='blue' size='lg' />
-        <BoxAnimation color='purple' size='sm' />
+        {/* <BoxAnimation color='blue' size='lg' />
+        <BoxAnimation color='purple' size='sm' /> */}
     </section>
     )
 }

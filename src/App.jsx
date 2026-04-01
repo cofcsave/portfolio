@@ -6,6 +6,7 @@ import WebPort from './components/WebPort/WebPort';
 import DesignPort from './components/DesignPort/DesignPort';
 import About from './components/About/About';
 import Footer from './components/Footer/Footer';
+import DotGrid from './components/DotsBkg/DotsBkg';
 
 function App() {
 
@@ -19,6 +20,19 @@ function App() {
       <DesignPort />
       <About />
      <Footer />
+      <div style={{ width: '100%', height: '100%', position: 'absolute', top:'0', left:'0',zIndex:'-1' }}>
+        <DotGrid
+          dotSize={5}
+          gap={15}
+          baseColor="#271E37"
+          activeColor="#5227FF"
+          proximity={120}
+          shockRadius={250}
+          shockStrength={5}
+          resistance={750}
+          returnDuration={1.5}
+        />
+      </div>
     </>
   )
 }

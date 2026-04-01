@@ -15,10 +15,10 @@
     }
     .aboutContainer {
         border-radius: $borderR;
-        padding: 48px 48px 0;
+        padding: 0 48px 0;
         max-width: 1440px;
         position:relative;
-        margin:48px auto 0;
+        margin:-24px auto 0;
         @media screen and (max-width:767px) {
             padding: 0;
             margin:24px auto 0;
@@ -32,6 +32,7 @@
         p {
             color:$textColor;
             text-align: left;
+            margin-bottom: 12px;
         }
     }
 }

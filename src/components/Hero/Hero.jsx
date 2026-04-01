@@ -1,5 +1,5 @@
 import './Hero.scss';
-import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function Hero () {
     return (
@@ -10,8 +10,8 @@ export default function Hero () {
         </svg>                
         <h1>My name is Cassy<br/><span>And I build Websites</span></h1>
         <p>Front End Web Developer / Designer</p>
-        <BoxAnimation color='purple' size='lg' />
-        <BoxAnimation color='blue' size='md' />
+        {/* <BoxAnimation color='purple' size='lg' />
+        <BoxAnimation color='blue' size='md' /> */}
     </section>
     )
 }

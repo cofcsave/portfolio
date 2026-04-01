@@ -26,7 +26,9 @@ html {
   }
 
 /* end basic reset styles*/
-
+#root {
+    position:relative;
+}
 body {
     background-color: $baseColor;
     font-family: 'Nunito', Helvetica, sans-serif;
@@ -69,7 +71,7 @@ h2~p {
     text-align: center;
 }
 h3 {
-    font-size: 2.25rem;
+    font-size: 2rem;
     letter-spacing: 0.72px;
     text-align: center;
     color:$textColor;

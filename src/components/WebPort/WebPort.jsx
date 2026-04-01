@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useScreenSize } from '../../hooks/useScreenSize';
 import { WEBPORT } from '../../webPortData';
-import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 const WebPort = () => {
   const [activeTab, setActiveTab] = useState('as-content');
@@ -81,8 +81,8 @@ const WebPort = () => {
     <section className="webPortfolio" id="portfolio">
       <div className="headerWDivide">
         <div className="divider"></div>
-        <h2>My Web Portfolio</h2>
-        <p>Some of my biggest and brightest web&nbsp;moments</p>
+        <h2>Built it, styled it, shipped it</h2>
+        <p>A collection of my biggest and brightest web&nbsp;moments.</p>
       </div>
       {!isMobile && (
         <>
@@ -242,7 +242,7 @@ const WebPort = () => {
           </div>
         </div>
       )}
-      <BoxAnimation color="blue" size="sm" />
+      {/* <BoxAnimation color="blue" size="sm" /> */}
     </section>
   );
 };

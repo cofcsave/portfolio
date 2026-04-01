@@ -2,7 +2,7 @@ import './DesignPort.scss';
 import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
 import { DESIGNPORT } from '../../designPortData';
-import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function DesignPort () {
     const [loadMore, setLoadMore] = useState(false);
@@ -63,8 +63,8 @@ export default function DesignPort () {
         <section className={`designPort ${onTop ? 'topLayer' : ''}`} id='designPortfolio'>
             <div className="headerWDivide">
                 <div className="divider"></div>
-                <h2>My Design/Email portfolio</h2>
-                <p>I've found time and time again that having a design makes me a better coder. Ask me how.</p>
+                <h2>The design/email side of my brain</h2>
+                <p>I've found time and time again that knowing how to design makes me a better coder, ask me how.</p>
             </div>
             <div className="designCont">
                 {DESIGNPORT.slice(0, 7).map((design, index) => <div key={index} className={`designProject div${index + 1}`}>
@@ -146,7 +146,7 @@ export default function DesignPort () {
                 </Modal>
             ))}
             <div className="outside-click-handler" onClick={closeAllModals}></div>
-            <BoxAnimation color='white' size='sm' />
+            {/* <BoxAnimation color='white' size='sm' /> */}
         </section>
     )
 }

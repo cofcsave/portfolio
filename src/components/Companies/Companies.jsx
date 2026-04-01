@@ -1,12 +1,13 @@
 import './Companies.scss';
-import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function Companies() {
     return (
         <section className="pastLogos">
                     <div className="container">
                         
-                    <h3>I've worked on a wide range of projects for a wide&nbsp;range of companies.</h3>
+                    <h3>Just some of the companies that kept me caffeinated</h3>
+                    <p>...and trusted me not to break production.</p>
                     <div className="logos">
                         <div className="logo"><svg viewBox="0 0 144 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24.5196 10.336C24.5196 9.24206 24.5757 8.56421 24.6855 8.30554C24.7977 8.04608 25.0782 7.91597 25.5325 7.91597C25.929 7.91597 26.2158 8.07101 26.3856 8.38111C26.5578 8.69199 26.6427 9.35426 26.6427 10.3695C26.6427 11.1829 26.564 11.7213 26.4074 11.9854C26.2508 12.2503 25.0548 12.7646 22.8226 13.5273C20.7337 14.2356 19.4256 14.8542 18.8989 15.3809C18.3714 15.91 18.108 16.8987 18.108 18.3471V19.9475C18.108 21.914 18.6036 23.1871 19.5962 23.7645C20.588 24.3434 21.678 24.6324 22.867 24.6324C23.7763 24.6324 24.5578 24.4587 25.2122 24.1128C25.8691 23.7692 26.4035 23.2464 26.8204 22.542V24.2787H33.454V14.5083C33.454 11.2889 33.3356 9.16649 33.0995 8.13646C32.8642 7.10644 32.1614 6.23925 30.9942 5.52945C29.8263 4.82044 28.0919 4.46748 25.7904 4.46748C23.869 4.46748 22.3084 4.77914 21.1069 5.40401C19.9047 6.03122 19.1045 6.75271 18.7048 7.57003C18.3059 8.38812 18.108 9.55216 18.108 11.0621V11.9262H24.5196V10.336ZM26.6427 19.0328C26.6427 20.0067 26.5804 20.6097 26.4518 20.8396C26.3264 21.0679 26.0514 21.1832 25.6314 21.1832C25.1896 21.1832 24.8943 21.039 24.744 20.7453C24.5952 20.4562 24.5196 19.8072 24.5196 18.7967C24.5196 17.9233 24.6068 17.2548 24.7783 16.7904C24.9489 16.3252 25.5706 15.7456 26.6427 15.0506"/>
@@ -63,7 +64,7 @@ export default function Companies() {
                             </div>
                     </div>
                     </div>
-                    <BoxAnimation color='white' size='sm' />
+                    {/* <BoxAnimation color='white' size='sm' /> */}
         </section>
     )
 }
