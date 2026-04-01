@@ -1,7 +1,7 @@
 import Cybernetic from './assets/Cybernetic.png';
 import Atlantis from './assets/Atlantis.png';
 import Axxess from './assets/Axxess.png';
-import Cavista from './assets/Cavista.png';
+import HardRockBet from './assets/hardrock_bet-rewards.webp';
 import Nextiva from './assets/Nextiva.png';
 import Density from './assets/Density.png';
 import Insurance from './assets/Insurance.png';
@@ -12,7 +12,7 @@ export const WEBPORT = [
     {
         company: 'Atlantis<br/>Scuba',
         skillsUsed: 'React, HTML, SCSS, Javascript, Figma, Git',
-        copy: 'The goal was to create a fun, easy to navigate website with all the essential information in an easy to digest layout. Originally created in vanilla HTML, SCSS and Javascript and then rebuilt into a simple React web app.',
+        copy: 'Built to be fun, easy to navigate, and packed with everything you need without the clutter. Started in vanilla HTML, SCSS, and JavaScript then rebuilt into React, a great excuse to get my hands dirty with it.',
         img: Atlantis,
         link: 'https://atlantisscuba.com/',
         updated: false,
@@ -22,27 +22,27 @@ export const WEBPORT = [
     {
         company: 'Luminant<br/>Music',
         skillsUsed: 'HTML, SCSS, JavaScript, Git',
-        copy: 'This website was a complete overhaul for a startup I worked for called Cybernetic Entertainment. I was going for a more visual eye catching experience to go along with what the product offers, visual eye candy for your music.',
+        copy: 'A full overhaul for a startup called Cybernetic Entertainment. The product is visual eye candy for your music, so the site needed to match that energy, bold, immersive, and impossible to scroll past.',
         img: Cybernetic,
         link: 'https://cofcsave.github.io/cybernetic/',
         updated: true,
-        updateCopy: 'They are no longer around unfortunately but this is what I originally created.',
+        updateCopy: 'They are no longer around unfortunately but here\'s a link what I originally created.',
         identity: 'lm-content'
     },
     {
-        company: 'Cavista',
-        skillsUsed: 'HTML, SCSS, Javascript, AdobeXD, Git, Bitbucket',
-        copy: 'This was another website overhaul. Their goal was to create a new look that would mainly attract more talent. I had 2 weeks to design and code this new website. Luckily the website was fairly simple.',
-        img: Cavista,
-        link: 'https://cofcsave.github.io/cavista/',
-        updated: true,
-        updateCopy: 'They have since updated the website and changed their name to Cavista Holdings. Here is a link to what I originally created.',
-        identity: 'c-content'
+        company: 'Hard Rock Bet',
+        skillsUsed: 'HTML, SCSS, Javascript, Figma, Git, Github, Wordpress',
+        copy: 'I\'ve been slowly taking this site over, redesigning text-heavy pages into cleaner, better experiences. One of those rare gigs where I get to own both the design and the code with real autonomy.',
+        img: HardRockBet,
+        link: 'https://hardrock.bet',
+        updated: false,
+        updateCopy: '',
+        identity: 'hrb-content'
     },
     {
         company: 'Nextiva',
         skillsUsed: 'HTML, SCSS, PHP, JavaScript, Figma, GSAP and tiny bit of WordPress',
-        copy: 'I learned a lot from working on this website like accessibility some PHP templating. I was also able to recreate the large Lottie animations using GSAP to greatly improve performance scores (see link for one such animation).',
+        copy: 'This one taught me a lot — accessibility, working with a larger dev team and how to have a little fun with performance. Rebuilt their heavy Lottie animations in GSAP and watched the performance scores thank me for it.',
         img: Nextiva,
         link: 'https://web.archive.org/web/20231203114356/https://www.nextiva.com/products/productivity.html',
         updated: true,
@@ -52,7 +52,7 @@ export const WEBPORT = [
     {
         company: 'Density',
         skillsUsed: 'Webflow, Figma, HTML, CSS',
-        copy: 'This was a smaller newer company that needed help with a WebFlow site. I had not previously used WebFlow as I prefer vanilla coding. Though, I have to admit the problems solving opportunities this presented was fun to work through. I was able to really dive in and understand WebFlow\'s limitations and tricks and how to work around them.',
+        copy: 'Not my usual vanilla code setup, but honestly? Figuring out Webflow\'s quirks and limitations turned into a fun puzzle. Came out the other side knowing exactly what it can do and how to push it further.',
         img: Density,
         link: 'https://www.density.io/',
         updated: false,
@@ -62,7 +62,7 @@ export const WEBPORT = [
     {
         company: 'Quote<br/>Friendly',
         skillsUsed: 'HTML, SCSS, JavaScript, AdobeXD',
-        copy: 'This website was originally for an insurance company based out of Florida. The goal of this website was to get information quickly and easily from potential customers and an online presence that they could use for advertisements. ',
+        copy: 'A Florida insurance company that needed a clean, no-nonsense web presence, fast to load, easy to use, and built to capture leads without getting in anyone\'s way.',
         img: Insurance,
         link: 'https://cofcsave.github.io/quoteFriendly/',
         updated: true,

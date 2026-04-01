@@ -42,6 +42,18 @@ section.pastLogos {
                 display: block;
                 flex:1 1 100%;
                 max-width: 145px;
+                &.hrbLogo svg{
+                    margin-bottom: -17%;
+                }
+                &.density svg{
+                    width:115%;
+                    margin-left:-7%;
+                }
+                &.smaller svg{
+                    width:90%;
+                    margin-left:auto;
+                    margin-right:auto;
+                }
                 @media screen and (max-width:768px) {
                     flex:1 1 30%;
                     margin-bottom: 24px;
@@ -51,6 +63,7 @@ section.pastLogos {
                     fill: $textColor;
                     width: 100%;
                     vertical-align: bottom;
+                    
                     @media screen and (max-width:768px) {
                        
                     }
