@@ -24,7 +24,7 @@ function App() {
         <DotGrid
           dotSize={5}
           gap={15}
-          baseColor="#271E37"
+          baseColor="#202020"
           activeColor="#5227FF"
           proximity={120}
           shockRadius={250}
