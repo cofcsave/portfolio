@@ -1,5 +1,5 @@
 import './Companies.scss';
-// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function Companies() {
     return (
@@ -67,7 +67,7 @@ export default function Companies() {
                         </div>
                     </div>
                     </div>
-                    {/* <BoxAnimation color='white' size='sm' /> */}
+                    <BoxAnimation color='white' size='sm' />
         </section>
     )
 }

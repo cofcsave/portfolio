@@ -1,5 +1,5 @@
 import './About.scss';
-// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 
 
@@ -21,8 +21,8 @@ These days I'm expanding my toolkit by learning React and React Native, adding c
 I'm also staying current with AI and how it's shaping the way we build for the web. I think it's a genuinely powerful tool, especially in the hands of someone who already understands the craft. Pair it with solid technical knowledge and it seriously levels up what you can build and how fast you can build it. I'm all about using every good tool available, and right now AI is absolutely one of them.
 </p>
             </div>
-            {/* <BoxAnimation color='blue' size='lg' />
-            <BoxAnimation color='purple' size='md' /> */}
+            <BoxAnimation color='blue' size='lg' />
+            <BoxAnimation color='purple' size='md' />
         </section>
     )
 }

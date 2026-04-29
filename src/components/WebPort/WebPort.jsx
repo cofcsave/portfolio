@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { useScreenSize } from '../../hooks/useScreenSize';
 import { WEBPORT } from '../../webPortData';
-// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 const WebPort = () => {
   const [activeTab, setActiveTab] = useState('as-content');
@@ -242,7 +242,7 @@ const WebPort = () => {
           </div>
         </div>
       )}
-      {/* <BoxAnimation color="blue" size="sm" /> */}
+      <BoxAnimation color="blue" size="sm" />
     </section>
   );
 };

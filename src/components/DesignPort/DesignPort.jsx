@@ -2,7 +2,7 @@ import './DesignPort.scss';
 import Modal from '../Modal/Modal';
 import { useState, useEffect } from 'react';
 import { DESIGNPORT } from '../../designPortData';
-// import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
+import BoxAnimation from '../Animations/BoxAnimation/BoxAnimation';
 
 export default function DesignPort () {
     const [loadMore, setLoadMore] = useState(false);
@@ -146,7 +146,7 @@ export default function DesignPort () {
                 </Modal>
             ))}
             <div className="outside-click-handler" onClick={closeAllModals}></div>
-            {/* <BoxAnimation color='white' size='sm' /> */}
+            <BoxAnimation color='white' size='sm' />
         </section>
     )
 }
